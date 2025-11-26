@@ -1,0 +1,67 @@
+\doxysection{Файл crypto.\+h}
+\hypertarget{crypto_8h}{}\label{crypto_8h}\index{crypto.h@{crypto.h}}
+
+
+Заголовочный файл для криптографических функций  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cryptopp/hex.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/osrng.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/sha.\+h$>$}\newline
+Граф включаемых заголовочных файлов для crypto.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crypto_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{crypto_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{crypto_8h_a1a54adc1b3082f44d723a064b010f162}{generate\+\_\+hash}} (string salt\+\_\+value, string password\+\_\+value)
+\begin{DoxyCompactList}\small\item\em \texorpdfstring{$<$}{<} Псевдоним для пространства имен Crypto\+PP \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл для криптографических функций 
+
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2024 
+\end{DoxyDate}
+\begin{DoxyNote}{Заметки}
+Используется библиотека Crypto\+PP 
+\end{DoxyNote}
+
+
+\doxysubsection{Функции}
+\Hypertarget{crypto_8h_a1a54adc1b3082f44d723a064b010f162}\label{crypto_8h_a1a54adc1b3082f44d723a064b010f162} 
+\index{crypto.h@{crypto.h}!generate\_hash@{generate\_hash}}
+\index{generate\_hash@{generate\_hash}!crypto.h@{crypto.h}}
+\doxysubsubsection{\texorpdfstring{generate\_hash()}{generate\_hash()}}
+{\footnotesize\ttfamily string generate\+\_\+hash (\begin{DoxyParamCaption}\item[{string}]{salt\+\_\+value,  }\item[{string}]{password\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+\texorpdfstring{$<$}{<} Псевдоним для пространства имен Crypto\+PP 
+
+Генерация хеша для аутентификации 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em salt\+\_\+value} & Соль для хеширования \\
+\hline
+\mbox{\texttt{ in}}  & {\em password\+\_\+value} & Пароль пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Хеш в шестнадцатеричном формате 
+\end{DoxyReturn}

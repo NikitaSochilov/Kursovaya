@@ -1,0 +1,53 @@
+\doxysection{Класс Connection\+Manager}
+\hypertarget{classConnectionManager}{}\label{classConnectionManager}\index{ConnectionManager@{ConnectionManager}}
+
+
+Менеджер сетевых соединений  
+
+
+
+
+{\ttfamily \#include $<$connection.\+h$>$}
+
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classConnectionManager_a17987bbe16ae008d996ed59f68478c46}{establish\+\_\+connection}} (const \mbox{\hyperlink{structConfiguration}{Configuration}} \texorpdfstring{$\ast$}{*}params)
+\begin{DoxyCompactList}\small\item\em Установка соединения с сервером \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Менеджер сетевых соединений 
+
+Осуществляет установку соединения с сервером, аутентификацию и передачу данных 
+
+\doxysubsection{Методы}
+\Hypertarget{classConnectionManager_a17987bbe16ae008d996ed59f68478c46}\label{classConnectionManager_a17987bbe16ae008d996ed59f68478c46} 
+\index{ConnectionManager@{ConnectionManager}!establish\_connection@{establish\_connection}}
+\index{establish\_connection@{establish\_connection}!ConnectionManager@{ConnectionManager}}
+\doxysubsubsection{\texorpdfstring{establish\_connection()}{establish\_connection()}}
+{\footnotesize\ttfamily int Connection\+Manager\+::establish\+\_\+connection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structConfiguration}{Configuration}} \texorpdfstring{$\ast$}{*}}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Установка соединения с сервером 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em params} & Параметры конфигурации соединения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0 в случае успеха 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em system\+\_\+error} & при ошибках сети или файловой системы \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{connection_8h}{connection.\+h}}\item 
+\mbox{\hyperlink{connection_8cpp}{connection.\+cpp}}\end{DoxyCompactItemize}

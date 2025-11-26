@@ -1,0 +1,81 @@
+\doxysection{Класс User\+Interface}
+\hypertarget{classUserInterface}{}\label{classUserInterface}\index{UserInterface@{UserInterface}}
+
+
+Класс для обработки аргументов командной строки  
+
+
+
+
+{\ttfamily \#include $<$interface.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classUserInterface_ae6fb70370701b3bd6120e923df9705b0}\label{classUserInterface_ae6fb70370701b3bd6120e923df9705b0} 
+{\bfseries User\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{classUserInterface}{User\+Interface}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUserInterface_a5899f0f23f1f117457162bab9e6332a4}{parse\+\_\+arguments}} (int arg\+\_\+count, const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg\+\_\+values)
+\begin{DoxyCompactList}\small\item\em Парсинг аргументов командной строки \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUserInterface_a7cd5deeb2a1007f6d0af38454c0d5f8c}{get\+\_\+help\+\_\+text}} ()
+\begin{DoxyCompactList}\small\item\em Получение текста справки \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structConfiguration}{Configuration}} \mbox{\hyperlink{classUserInterface_a61acf33dbbfded3017937147fc011a6c}{get\+\_\+configuration}} ()
+\begin{DoxyCompactList}\small\item\em Получение конфигурации \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки аргументов командной строки 
+
+\doxysubsection{Методы}
+\Hypertarget{classUserInterface_a61acf33dbbfded3017937147fc011a6c}\label{classUserInterface_a61acf33dbbfded3017937147fc011a6c} 
+\index{UserInterface@{UserInterface}!get\_configuration@{get\_configuration}}
+\index{get\_configuration@{get\_configuration}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{get\_configuration()}{get\_configuration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structConfiguration}{Configuration}} User\+Interface\+::get\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение конфигурации 
+
+\begin{DoxyReturn}{Возвращает}
+Структура \doxylink{structConfiguration}{Configuration} с настройками 
+\end{DoxyReturn}
+\Hypertarget{classUserInterface_a7cd5deeb2a1007f6d0af38454c0d5f8c}\label{classUserInterface_a7cd5deeb2a1007f6d0af38454c0d5f8c} 
+\index{UserInterface@{UserInterface}!get\_help\_text@{get\_help\_text}}
+\index{get\_help\_text@{get\_help\_text}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{get\_help\_text()}{get\_help\_text()}}
+{\footnotesize\ttfamily string User\+Interface\+::get\+\_\+help\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение текста справки 
+
+\begin{DoxyReturn}{Возвращает}
+Строка с текстом справки 
+\end{DoxyReturn}
+\Hypertarget{classUserInterface_a5899f0f23f1f117457162bab9e6332a4}\label{classUserInterface_a5899f0f23f1f117457162bab9e6332a4} 
+\index{UserInterface@{UserInterface}!parse\_arguments@{parse\_arguments}}
+\index{parse\_arguments@{parse\_arguments}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{parse\_arguments()}{parse\_arguments()}}
+{\footnotesize\ttfamily bool User\+Interface\+::parse\+\_\+arguments (\begin{DoxyParamCaption}\item[{int}]{arg\+\_\+count,  }\item[{const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg\+\_\+values }\end{DoxyParamCaption})}
+
+
+
+Парсинг аргументов командной строки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em arg\+\_\+count} & Количество аргументов \\
+\hline
+\mbox{\texttt{ in}}  & {\em arg\+\_\+values} & Массив аргументов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если парсинг успешен, false в противном случае 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_8h}{interface.\+h}}\item 
+\mbox{\hyperlink{interface_8cpp}{interface.\+cpp}}\end{DoxyCompactItemize}

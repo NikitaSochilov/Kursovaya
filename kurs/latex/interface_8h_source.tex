@@ -1,0 +1,41 @@
+\doxysection{interface.\+h}
+\hypertarget{interface_8h_source}{}\label{interface_8h_source}\mbox{\hyperlink{interface_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <boost/program\_options.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }po\ =\ boost::program\_options;\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structConfiguration}{Configuration}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{structConfiguration_a66295bd3934fd830d12b137ba3022956}{input\_filename}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{structConfiguration_a2463bfa94cbc79d48c1f0253a5c7e998}{output\_filename}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{structConfiguration_a725a1d660f31be4ce572545f88004ac8}{credentials\_filename}};\ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structConfiguration_a540b3f276afa66ad164fe95d444aed8e}{port\_number}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{structConfiguration_abe5ec8baa2aa83742972bccbb5ebdee4}{server\_address}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUserInterface}{UserInterface}}\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ po::options\_description\ options\_description;\ }
+\DoxyCodeLine{00038\ \ \ \ \ po::variables\_map\ variables\_map;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{structConfiguration}{Configuration}}\ settings;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{classUserInterface_ae6fb70370701b3bd6120e923df9705b0}{UserInterface}}();}
+\DoxyCodeLine{00046\ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserInterface_a5899f0f23f1f117457162bab9e6332a4}{parse\_arguments}}(\textcolor{keywordtype}{int}\ arg\_count,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}**\ arg\_values);}
+\DoxyCodeLine{00054\ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUserInterface_a7cd5deeb2a1007f6d0af38454c0d5f8c}{get\_help\_text}}();}
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{structConfiguration}{Configuration}}\ \mbox{\hyperlink{classUserInterface_a61acf33dbbfded3017937147fc011a6c}{get\_configuration}}()\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ settings;}
+\DoxyCodeLine{00067\ \ \ \ \ \};}
+\DoxyCodeLine{00068\ \};}
+
+\end{DoxyCode}
